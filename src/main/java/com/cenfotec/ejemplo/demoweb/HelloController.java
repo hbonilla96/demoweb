@@ -11,7 +11,7 @@ public class HelloController {
     @GetMapping("/geeting")
     public String eliminarListar(@RequestParam(name="name", required=false, defaultValue="world")String name, Model model) {
         model.addAttribute("name", name);
-        return "greetings";
+        return "greetings hi";
     }
 
 }
